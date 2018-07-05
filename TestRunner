@@ -1,0 +1,22 @@
+public class Test {
+    public static void main(String[] args) {
+       User User1 = new User("Andriy",178,58,435,400,550,300,People.Children);
+
+      User userlist = new User("Oleg",190,97,556,444,678,502, People.Man);
+
+      User userWoman = new User("Masha",168,54,430,480,523,678,People.Women);
+
+       userlist.addUser(userlist);
+       User1.addUser(User1);
+       userWoman.addUser(userWoman);
+
+       System.out.println(User1);
+      System.out.println("SumChildren "+ User1.Sumtest());
+
+        System.out.println(userlist);
+        System.out.println("SumMan "+ userlist.Sumtest());
+
+        System.out.println(userWoman);
+        System.out.println("SumWomen"+ userWoman.Sumtest());
+    }
+}
